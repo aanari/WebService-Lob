@@ -1,4 +1,4 @@
-package t::Harness;
+package t::lib::Harness;
 
 use Exporter 'import';
 use Memoize;
