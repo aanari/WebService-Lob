@@ -2,10 +2,24 @@ use Test::Modern;
 use t::lib::Harness qw(lob);
 plan skip_all => 'LOB_API_KEY not in ENV' unless defined lob();
 
+use Storable qw(dclone);
+
 subtest 'Testing verify_address' => sub {
-    like exception { lob->verify_address },
-        qr/Not enough arguments for method/,
-        'failed correctly on missing parameters';
+    my %address_params = (
+        address_line1   => '370 Townsend St',
+        address_city    => 'Boulder',
+        address_state   => 'CO',
+        address_zip     => '80305',
+        address_country => 'US',
+    );
+
+    for my $key (keys %address_params) {
+        my %params = %{ dclone(\%address_params) };
+        delete $params{$key};
+        like exception { lob->verify_address(%params) },
+            qr/Not enough arguments for method/,
+            "failed correctly on missing parameter: $key";
+    }
 
     isa_ok exception { lob->verify_address(
         address_line1   => '370 Townsend St',
