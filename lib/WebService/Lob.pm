@@ -2,6 +2,8 @@ package WebService::Lob;
 use Moo;
 with 'WebService::BaseClientRole';
 
+# VERSION
+
 use aliased;
 my $exc = prefix('WebService::Lob::Exception');
 
