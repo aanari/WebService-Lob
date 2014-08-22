@@ -4,8 +4,8 @@ with 'WebService::BaseClientRole';
 
 # VERSION
 
-use WebService::Lob::Exception::AddressNotFound;
-use WebService::Lob::Exception::AddressMissingInformation;
+use aliased 'WebService::Lob::Exception::AddressNotFound';
+use aliased 'WebService::Lob::Exception::AddressMissingInformation';
 
 use Function::Parameters ':strict';
 
@@ -46,9 +46,9 @@ method verify_address(
         address_country => $address_country,
     });
 
-    WebService::Lob::Exception::AddressNotFound->throw unless $result;
-    WebService::Lob::Exception::AddressMissingInformation->throw(
-        message => $result->{message}) if $result->{message};
+    AddressNotFound->throw unless $result;
+    AddressMissingInformation->throw( message => $result->{message} )
+        if $result->{message};
     return $result->{address};
 }
 
