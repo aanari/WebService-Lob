@@ -1,0 +1,8 @@
+language: perl
+perl:
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+env:
+  - LOB_API_KEY=test_f126eb04f7a10e05de646d4094b42c96ab6
