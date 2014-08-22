@@ -4,7 +4,7 @@ plan skip_all => 'LOB_API_KEY not in ENV' unless defined lob();
 
 use Storable qw(dclone);
 
-subtest 'Testing verify_address' => sub {
+subtest 'Testing verify_address parameter errors' => sub {
     my %address_params = (
         address_line1   => '370 Townsend St',
         address_city    => 'Boulder',
@@ -20,7 +20,9 @@ subtest 'Testing verify_address' => sub {
             qr/Not enough arguments for method/,
             "failed correctly on missing parameter: $key";
     }
+};
 
+subtest 'Testing verify_address address errors' => sub {
     isa_ok exception { lob->verify_address(
         address_line1   => '370 Townsend St',
         address_city    => 'Boulder',
@@ -36,7 +38,9 @@ subtest 'Testing verify_address' => sub {
         address_zip     => '98109',
         address_country => 'US',
     )}, 'WebService::Lob::Exception::AddressMissingInformation';
+};
 
+subtest 'Testing verify_address address lookup' => sub {
     my $address = lob->verify_address(
         address_line1   => '370 Townsend St',
         address_city    => 'San Francisco',
