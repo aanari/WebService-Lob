@@ -52,13 +52,11 @@ method verify_address(
     return $result->{address};
 }
 
-# ABSTRACT: Lob API bindings
-
 =head1 SYNOPSIS
 
     use WebService::Lob;
 
-    my $lob = WebService::NationBuilder->new( api_key => 'abc123' );
+    my $lob = WebService::Lob->new( api_key => 'abc123' );
 
     $lob->get_countries();
 
