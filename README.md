@@ -1,7 +1,3 @@
-# NAME
-
-WebService::Lob
-
 # VERSION
 
 version 0.0104
@@ -18,6 +14,8 @@ version 0.0104
 
 This module provides bindings for the
 [Lob](https://www.lob.com/docs) API.
+
+[![Build Status](https://travis-ci.org/aanari/WebService-Lob.svg?branch=master)](https://travis-ci.org/aanari/WebService-Lob)
 
 # METHODS
 
@@ -158,9 +156,22 @@ __Exceptions:__
 
     The address you entered was found but more information is needed to match to a specific address.
 
+# BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/aanari/WebService-Lob/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
 # AUTHOR
 
 Ali Anari <ali@anari.me>
+
+# CONTRIBUTOR
+
+Naveed Massjouni <naveedm9@gmail.com>
 
 # COPYRIGHT AND LICENSE
 

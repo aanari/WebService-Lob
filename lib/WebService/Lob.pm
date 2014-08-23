@@ -65,6 +65,8 @@ method verify_address(
 This module provides bindings for the
 L<Lob|https://www.lob.com/docs> API.
 
+=for markdown [![Build Status](https://travis-ci.org/aanari/WebService-Lob.svg?branch=master)](https://travis-ci.org/aanari/WebService-Lob)
+
 =head1 METHODS
 
 =head2 new
