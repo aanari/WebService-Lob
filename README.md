@@ -1,6 +1,10 @@
+# NAME
+
+WebService::Lob
+
 # VERSION
 
-version 0.0104
+version 0.0105
 
 # SYNOPSIS
 
@@ -14,8 +18,6 @@ version 0.0104
 
 This module provides bindings for the
 [Lob](https://www.lob.com/docs) API.
-
-[![Build Status](https://travis-ci.org/aanari/WebService-Lob.svg?branch=master)](https://travis-ci.org/aanari/WebService-Lob)
 
 # METHODS
 
