@@ -4,7 +4,7 @@ WebService::Lob
 
 # VERSION
 
-version 0.0105
+version 0.0106
 
 # SYNOPSIS
 

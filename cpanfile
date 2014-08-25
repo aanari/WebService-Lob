@@ -1,4 +1,4 @@
-requires "Function::Parameters" => "0";
+requires "Method::Signatures" => "0";
 requires "Moo" => "1.006000";
 requires "Throwable::Error" => "0";
 requires "WebService::BaseClientRole" => "0.0004";

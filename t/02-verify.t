@@ -17,7 +17,7 @@ subtest 'Testing verify_address parameter errors' => sub {
         my %params = %{ dclone(\%address_params) };
         delete $params{$key};
         like exception { lob->verify_address(%params) },
-            qr/Not enough arguments for method/,
+            qr/$key must be a string/,
             "failed correctly on missing parameter: $key";
     }
 };
