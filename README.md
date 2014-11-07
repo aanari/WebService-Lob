@@ -4,7 +4,7 @@ WebService::Lob
 
 # VERSION
 
-version 0.0106
+version 0.0107
 
 # SYNOPSIS
 
@@ -34,29 +34,33 @@ Instantiates a new WebService::Lob client object.
         retries  => $retries,    # optional
     );
 
-__Parameters__
+**Parameters**
 
-- \- `api_key`
+- - `api_key`
 
-    _Required_&#10; &#8;
+    _Required_
+     
 
     A valid Lob api key for your account.
 
-- \- `base_url`
+- - `base_url`
 
-    _Optional_&#10; &#8;
+    _Optional_
+     
 
     The Lob base url to make API calls against.  Defaults to [https://api.lob.com](https://api.lob.com).
 
-- \- `timeout`
+- - `timeout`
 
-    _Optional_&#10; &#8;
+    _Optional_
+     
 
     The number of seconds to wait per request until timing out.  Defaults to `10`.
 
-- \- `retries`
+- - `retries`
 
-    _Optional_&#10; &#8;
+    _Optional_
+     
 
     The number of times to retry requests in cases when Lob returns a 5xx response.  Defaults to `0`.
 
@@ -64,11 +68,11 @@ __Parameters__
 
 Returns a list of all US states.
 
-__Request:__
+**Request:**
 
     get_states();
 
-__Response:__
+**Response:**
 
     [{
         name       => 'Alabama',
@@ -96,11 +100,11 @@ __Response:__
 
 Returns a list of all currently supported countries.
 
-__Request:__
+**Request:**
 
     get_countries();
 
-__Response:__
+**Response:**
 
     [{
         name       => 'United States',
@@ -128,7 +132,7 @@ __Response:__
 
 Validates an address given.
 
-__Request:__
+**Request:**
 
     verify_address(
         address_line1   => '370 Townsend St',
@@ -138,7 +142,7 @@ __Request:__
         address_country => 'US',
     );
 
-__Response:__
+**Response:**
 
     {
         object          => 'address',
@@ -150,13 +154,13 @@ __Response:__
         address_country => 'US',
     }
 
-__Exceptions:__
+**Exceptions:**
 
-- \- `WebService::Lob::Exception::AddressNotFound`
+- - `WebService::Lob::Exception::AddressNotFound`
 
     Address Not Found.
 
-- \- `WebService::Lob::Exception::AddressMissingInformation`
+- - `WebService::Lob::Exception::AddressMissingInformation`
 
     The address you entered was found but more information is needed to match to a specific address.
 
