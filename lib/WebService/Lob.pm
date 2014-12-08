@@ -52,6 +52,10 @@ method verify_address(
     return $result->{address};
 }
 
+=head1 NAME
+
+WebService::Lob - interface to API for lob.com (printing and mailing service)
+
 =head1 SYNOPSIS
 
     use WebService::Lob;
