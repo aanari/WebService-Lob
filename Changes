@@ -4,6 +4,7 @@ Revision history for Perl module WebService::Lob
     - Added Changes file
     - Added abstract section to pod (=head1 NAME), so module will appear
       right in MetaCPAN etc.
+    - Added a SEE ALSO section to pod, with link to lob.com docs page
 
 0.0107 2014-11-07 AANARI
     - Updated to use WebService::Client
