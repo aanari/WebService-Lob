@@ -1,10 +1,11 @@
 Revision history for Perl module WebService::Lob
 
-0.01?? 2014-12-?? AANARI
+0.0108 2014-12-?? AANARI
     - Added Changes file
     - Added abstract section to pod (=head1 NAME), so module will appear
       right in MetaCPAN etc.
     - Added a SEE ALSO section to pod, with link to lob.com docs page
+    - Specified min perl version as 5.012 in code and metadata
 
 0.0107 2014-11-07 AANARI
     - Updated to use WebService::Client

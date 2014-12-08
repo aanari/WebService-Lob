@@ -1,4 +1,6 @@
 package WebService::Lob;
+
+use 5.012;
 use Moo;
 with 'WebService::Client';
 

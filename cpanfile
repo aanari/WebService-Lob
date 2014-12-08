@@ -4,6 +4,7 @@ requires "Throwable::Error" => "0";
 requires "WebService::BaseClientRole" => "0.0004";
 requires "WebService::Client" => "0";
 requires "aliased" => "0";
+requires "perl" => "5.012";
 
 on 'test' => sub {
   requires "Exporter" => "0";
@@ -14,7 +15,6 @@ on 'test' => sub {
   requires "Storable" => "0";
   requires "Test::Modern" => "0";
   requires "Test::More" => "0";
-  requires "perl" => "5.006";
   requires "strict" => "0";
   requires "warnings" => "0";
 };
