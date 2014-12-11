@@ -1,4 +1,6 @@
 package WebService::Lob;
+
+use 5.008001;
 use Moo;
 with 'WebService::Client';
 
@@ -51,6 +53,10 @@ method verify_address(
         if $result->{message};
     return $result->{address};
 }
+
+=head1 NAME
+
+WebService::Lob - interface to API for lob.com (printing and mailing service)
 
 =head1 SYNOPSIS
 
@@ -213,6 +219,10 @@ Address Not Found.
 The address you entered was found but more information is needed to match to a specific address.
 
 =back
+
+=head1 SEE ALSO
+
+L<https://lob.com/docs> - the API docs for L<lob.com>
 
 =cut
 

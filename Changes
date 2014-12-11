@@ -1,0 +1,24 @@
+Revision history for Perl module WebService::Lob
+
+0.0108 2014-12-?? AANARI
+    - Added Changes file
+    - Added abstract section to pod (=head1 NAME), so module will appear
+      right in MetaCPAN etc.
+    - Added a SEE ALSO section to pod, with link to lob.com docs page
+    - Specified min perl version as 5.8.1 in code and metadata
+
+0.0107 2014-11-07 AANARI
+    - Updated to use WebService::Client
+    - Switch to Method::Signatures to work with older Perls
+    - Fixed dist and weaver for travis
+
+0.0105 2014-08-23 AANARI
+    - Remove TrustPod and Pod Coverage for now
+    - Fixed pod, bumped version
+    - Improved Travis, dzil, and weaver config
+    - use aliased exception class names (@ironcamel++)
+    - Removed aliased to fix dzil, bumped version
+
+0.0104 2014-08-22 AANARI
+    - First release to CPAN
+

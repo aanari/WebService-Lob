@@ -1,4 +1,5 @@
 package WebService::Lob::Exception::AddressMissingInformation;
+
 use Moo;
 extends 'Throwable::Error';
 
